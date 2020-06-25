@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <!--commentario &aacute;-->
+    <meta name="author" content="Diana Vilé" />
+    <meta name="description" content="HTML5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 snippet</title>
+</head>
+
+<body>
+    <h1>Formulario2</h1>
+    <!--Los attributos siempre en minusculas!-->
+    <form action="#" method="GET" enctye="multiple/form-data" autocomplete="off">
+        <!--type "radio"= puedes selecionar solo 1 opcion-->
+        <p><input type="radio" name="experiencia" value="junior" /> Junior</p>
+        <p><input type="radio" name="experiencia" value="mid" /> Mid-senior</p>
+        <p>
+            <input type="radio" name="experiencia" value="senior" checked /> Senior
+        </p>
+        <p><input type="radio" name="experiencia" value="lead" /> Lead</p>
+        <p><input type="radio" name="experiencia" value="ninguna" /> Ninguna</p>
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+
+    <!--type "checkbox" =puedes selecionar todas las opciones-->
+    <form action="#" method="GET" autocomplete="off">
+        <p><input type="checkbox" name="futbol" value="futbol" /> Futbol</p>
+        <p><input type="checkbox" name="basquetbol" checked /> Basquetbol</p>
+        <p><input type="checkbox" name="beisbol" /> Beisbol</p>
+        <p><input type="checkbox" name="voleibol" /> Voleibol</p>
+        <p><input type="checkbox" name="otro" /> Otro</p>
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+
+    <!--type "select" =puedes selecionar 1 opcion de una lista desplegable, 1 opcion visible-->
+    <form action="#" method="GET" autocomplete="off">
+        <select>
+        <option> Azul</option>
+        <option selected> Verde </option>
+        <option> Rojo </option>
+        <option> Blanco </option>
+      </select>
+        <p><button type="submit">Enviar</button></p>
+    </form>
+
+    <!--type "select" =puedes selecionar +1 opcion de una lista desplegable, multiples opciones visible-->
+    <form action="#" method="GET" autocomplete="off">
+        <select multiple="multiple" size="4">
+        <option> Azul</option>
+        <option selected> Verde </option>
+        <option> Rojo </option>
+        <option> Blanco </option>
+      </select>
+        <p><button type=" submit ">Enviar</button></p>
+    </form>
+
+    <!--buscador-->
+    <label>Buscador:</label>
+    <input list="buscar" />
+    <datalist id="buscar">
+      <option> Azul</option>
+      <option> Verde </option>
+      <option> Rojo </option>
+      <option> Blanco </option>
+    </datalist>
+    <p><button type=" submit ">Enviar</button></p>
+
+    <!--Cargar archivo with file, hide with hidden, show with text -->
+    <input list="file" name="archivo" accept="imagen/*" multiple />
+    <input type="file" multiple="multiple" />
+    <input type="hidden" name="oculto" value="oculto" />
+    <input type="text" name="oculto" value="oculto" readonly disabled />
+    <!-- OR <form method="post" enctype="multipart/form-data" id="uploadform">
+    <input type="file" name="dragupload[]" multiple="multiple" onchange="if (this.value) document.getElementById('uploadform').submit();" />
+    </form>-->
+
+    <!--button Submit or Reset-->
+    <p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </p>
+</body>
+
+</html>

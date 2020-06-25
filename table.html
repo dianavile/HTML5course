@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <!--commentario &aacute;-->
+    <meta name="author" content="Diana Vilé" />
+    <meta name="description" content="HTML5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 snippet</title>
+</head>
+
+<body>
+    <h1>Tables</h1>
+
+    <!--Add border to table with border=""-->
+    <table border="1">
+        <!--Caption= titulo de Tabla-->
+        <caption>
+            <mark>Productos</mark>
+        </caption>
+        <thead>
+            <!--Add Row-->
+            <tr>
+                <!--Add Column-->
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Existencias</th>
+            </tr>
+        </thead>
+
+        <!--Add Content in Body-->
+        <tbody>
+            <tr>
+                <td>Refresco</td>
+                <td>10.00</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Patatas</td>
+                <td>12.00</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+
+        <!--Add Footer to Table -->
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>38</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table border="1" style="width: 50%;">
+        <!--Caption= titulo de Tabla-->
+        <caption>
+            <mark>Combinaci&oacute;n de celdas </mark>
+        </caption>
+
+        <!--Add style to a column with colgroup-->
+        <colgroup>
+            <col style="width: 25%; background: yellow;" />
+            <col style="width: 40%;" />
+            <col style="width: 35%;" />
+        </colgroup>
+
+        <!--Add Row-->
+        <tr>
+            <!--Add Column-->
+            <th>Clase A</th>
+            <th>Clase B</th>
+            <th>Clase C</th>
+        </tr>
+
+        <tr>
+            <!--Add Data Value-->
+            <!--Colspan= add specific space -->
+            <td colspan="2">X</td>
+            <td rowspan="2">Y</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <!--commentario &aacute;-->
+    <meta name="author" content="Diana Vilé" />
+    <meta name="description" content="HTML5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 snippet Formulario</title>
+</head>
+
+<body>
+    <h1>Formulario Parte1</h1>
+    <!--Add Form-->
+    <!--Add Form Controls, action="#"= send to same page o complete route, o specific programming language-->
+    <!--Add Form Controls, method=""= GET (enviar por URL), POST (enviar OCULTA, no visible por URL), dialog-->
+    <form action="#" method="POST" autocomplete="off"></form>
+    <p>
+        <!--Add Form label-->
+        <label for="nombre">Nombre:</label>
+        <!--Add Form input: to add text inside label button, text-->
+        <input type="text" id="nombre" name="nombre" size="30" maxlength="10" placeholder="Introduce el nombre" required autofocus />
+    </p>
+
+    <p>
+        <!--Add Form label-->
+        <label for="password">Contrase&ntilde;a:</label>
+        <!--Add Form input: to add text inside label button, text-->
+        <input type="password" id="password" name="contraseño" size="30" required />
+    </p>
+
+    <p>
+        <!--Add Form Correo-->
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" />
+    </p>
+
+    <p>
+        <!--Add Form URL-->
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url" />
+    </p>
+
+    <p>
+        <!--Add Form Number-->
+        <label for="numero">Numero:</label>
+        <input type="number" id="numero" name="numero" min="1" max="100" step="2" />
+    </p>
+
+    <p>
+        <!--Add Form Date-->
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="numero" name="numero" min="1" max="100" step="2" />
+        <!--Add Form datatime for Mobile-->
+        <input type="datetime" id="numero" name="numero" min="1" max="100" step="2" />
+        <input type="month" id="numero" name="numero" min="1" max="100" step="2" />
+        <input type="week" id="numero" name="numero" min="1" max="100" step="2" />
+        <input type="time" id="numero" name="numero" min="1" max="100" step="2" />
+    </p>
+
+    <p>
+        <!--Add Form Others-->
+        <input type="range" />
+        <input type="color" />
+
+    </p>
+
+    <p>
+        <!--Add Form Observations+ Textarea-->
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones" cols="50" rows="5"></textarea>
+    </p>
+
+
+    <p>
+        <!--Add Button -->
+        <button type=" submit ">Enviar</button>
+    </p>
+
+
+</body>
+
+</html>
